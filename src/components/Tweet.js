@@ -17,6 +17,9 @@ const tweets= [{
 },
 { name: 'sofia',
   tweet: 'i love my cats!',
+},
+{ name: 'sofia',
+  tweet: 'i love my cats!',
 }
 
 ];
