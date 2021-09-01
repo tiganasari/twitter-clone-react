@@ -1,11 +1,31 @@
 import React from 'react';
+import OneTweet from './OneTweet'
 
-const Tweet = () => (
+const Tweet = (props) => {
+const tweets= [{
+  name: 'tigana',
+  tweet: 'react is cool, i need a break'
+},
+{
+  name: 'bubu',
+  tweet: 'where is my catnip'
+},
+{
+  name: 'anou',
+  tweet: 'going cycling now bye'
 
-    <section>
-        <h1>Tweets</h1>
+},
+{ name: 'sofia',
+  tweet: 'i love my cats!',
+}
 
-    </section>
+];
+    return (
+        <section>
+           {tweets.map(tweet => (
+               <OneTweet name={tweet.name} tweet={tweet.tweet}/>
+           ))}
+        </section>
 );
-
+};
 export default Tweet;
